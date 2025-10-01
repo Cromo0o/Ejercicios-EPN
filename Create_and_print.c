@@ -1,0 +1,1 @@
+//Imprimir variables en pantalla
