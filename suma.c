@@ -1,3 +1,4 @@
+//suma de dos numeros usando una funcion
 #include <stdio.h>
 
 int suma(int num_a, int num_b){
