@@ -5,7 +5,7 @@ int main(void){
 
     int num;
 
-    printf("Digite un numero para saber si es par o impar: ");
+    printf("Digite un numero aleatorio para saber si es par o impar: ");
     scanf("%d",&num);
 
     if(num % 2 == 0){
