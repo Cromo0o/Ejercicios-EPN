@@ -14,8 +14,7 @@ float perimeter(float base, float height){
 
 int main(void){
 
-    float base;
-    float height; 
+    float base, height;
 
     printf("Digite cuanto mide la base del rectangulo: ");
     scanf("%f", &base);

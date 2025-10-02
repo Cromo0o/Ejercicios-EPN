@@ -18,7 +18,6 @@ int main(void){
         printf("El numero %d es impar :(",num);
 
     }
-
     
     return 0;
 }
