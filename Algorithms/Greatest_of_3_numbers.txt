@@ -1,0 +1,18 @@
+" Algorithm for determining the larger of three numbers "
+
+1. Definimos como "float" las variables que guardaran los tres numeros: num1, num2 , num3.
+
+2. Le preguntamos al usuario el primer numero y lo guardamos en la variable num1.
+
+3. Le preguntamos al usuario el segundo numero y lo guardamos en la variable num2.
+
+4. Le preguntamos al usuario el tercer numero y lo guardamos en la variable num3.
+
+5. Si (num1 > num2) y (num1 > num3), imprimir "El (num1) es mayor que el (num2) y (num3)", sino seguir al paso 6.
+
+6. Si (num2 > num1) y (num2 > num3), imprimir "El (num2) es mayor que el (num1) y (num3)", sino seguir al paso 7.
+
+7. Si (num3 > num1) y (num3 > num2), imprimir "El (num3) es mayor que el (num1) y (num2)", sino seguir al paso 8.
+
+8. Si no se cumple 5, 6 y 7, imprimir "Los 3 números son iguales".
+  
