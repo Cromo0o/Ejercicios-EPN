@@ -1,0 +1,12 @@
+" Determining whether an integer is positive, negative, or zero. (Spanish) "
+
+1. Definimos una variable como un numero entero, será la que almacene el numero a tratar: num
+
+2. Pedimos el numero al usuario y lo guardamos en la variable anteriormente creada.
+
+3. Si el numero es mayor que cero, imprimir "El numero es positivo".
+
+4. Si el numero es menor que cero, imprimir "El numero es negativo".
+
+5. Si no se cumple el paso 3 y 4, imprimir "El numero es cero".
+
