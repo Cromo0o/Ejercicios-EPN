@@ -18,4 +18,6 @@ int main(void){
 
     printf("El promedio es %.2f\n",average);
 
+    return 0;
+    
 }
