@@ -14,5 +14,5 @@
 
 7. Si (num3 > num1) y (num3 > num2), imprimir "El (num3) es mayor que el (num1) y (num2)", sino seguir al paso 8.
 
-8. Si no se cumple 5, 6 y 7, imprimir "Los 3 números son iguales".
+8. Si no se cumple el paso 5, 6 y 7, imprimir "Los 3 números son iguales".
   
