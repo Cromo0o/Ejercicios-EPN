@@ -24,4 +24,7 @@ int main(void){
         printf("El numero es cero");     //Si no se cumple el paso 3 y 4, imprimir "El numero es cero".
 
     }
+
+    return 0;
+
 }
