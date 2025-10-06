@@ -18,4 +18,6 @@ int main(void){
     var = 20;
     printf("%d",var);
 
+    return 0;
+
 }
