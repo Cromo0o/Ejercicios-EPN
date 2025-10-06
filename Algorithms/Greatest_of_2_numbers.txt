@@ -1,14 +1,14 @@
 " Algorithm for determining the larger of two numbers "
 
-1. Definimos como "float" dos variables para tener una mayor exactitud para cualquier numero: num1, num2.
+1. Definimos como "float" dos variables: num1, num2.
 
-2. Le solicitamos el primer numero y lo guardamos en la variable num1. 
+2. Solicitamos el primer numero y lo guardamos en la variable num1. 
 
-3. Le solicitamos el segundo numero y lo guardamos en la variable num2.
+3. Solicitamos el segundo numero y lo guardamos en la variable num2.
 
 4. Si el primer numero es mayor que el segundo numero, imprimir "El (num1) es mayor que el (num2)".
 
 5. Si el segundo numero es mayor que el primero, imprimir "El (num2) es mayor que el (num1)".
 
-6. Si no se cumple el paso 4 y 5, imprimir "El (num1) es igual que el numero (num2)".
+6. Si no se cumple el paso 4 y 5, imprimir "Ambos numeros son iguales".
 
