@@ -1,6 +1,6 @@
 " Algorithm for determining the larger of two numbers "
 
-1. Definimos como "float" dos numeros para tener una mayor exactitud para cualquier numero: num1, num2.
+1. Definimos como "float" dos variables para tener una mayor exactitud para cualquier numero: num1, num2.
 
 2. Le solicitamos el primer numero y lo guardamos en la variable num1. 
 
