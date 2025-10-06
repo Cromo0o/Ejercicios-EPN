@@ -1,0 +1,20 @@
+" Know if a number is divisible by four "
+
+" Un número es divisible por 4 si los dos últimos dígitos forman un número que es divisible por 4 "
+
+1. Definir una variable la cual guardará el numero a identificar como divisible para 4: num.
+
+2. Preguntarle al usuario qué numero desea utilizar y guardarlo en la variable "num".
+
+3. Calcular los últimos dos dígitos del número usando: (num MOD 100).
+
+4. Si los últimos dos dígitos MOD 4 nos da que es igual a cero, imprimir "El numero (num) es divisible para 4".
+
+5. Si no se cumple el paso 4, imprimir "El numero (num) no es divisible para 4".
+
+
+
+
+
+
+
