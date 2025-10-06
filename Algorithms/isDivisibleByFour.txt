@@ -2,7 +2,7 @@
 
 " Un número es divisible por 4 si los dos últimos dígitos forman un número que es divisible por 4 "
 
-1. Definir una variable la cual guardará el numero a identificar como divisible para 4: num.
+1. Definir una variable tipo entero la cual guardará el numero a identificar como divisible para 4: num.
 
 2. Preguntarle al usuario qué numero desea utilizar y guardarlo en la variable "num".
 
