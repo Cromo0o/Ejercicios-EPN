@@ -22,8 +22,8 @@ int main(void){
     printf("Digite cuanto es la altura del rectangulo: ");
     scanf("%f", &height);
 
-    printf("El area del triangulo mide: %.2f\n",area(base,height));
-    printf("El perimetro del triangulo mide: %.2f\n",perimeter(base,height));
+    printf("El area del triangulo mide: %.2f\n",area(base, height));
+    printf("El perimetro del triangulo mide: %.2f\n",perimeter(base, height));
     
     return 0;
 
