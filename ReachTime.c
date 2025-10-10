@@ -18,7 +18,7 @@ int main(void){
 
     if( s1 > s2 ){
 
-        R_time = ( d / ( s1 - s2 )) * 60; //Formula for time of flight in uniform rectilinear motion
+        R_time = ( d / ( s1 - s2 )) * 60; //Formula for the time of reach in uniform rectilinear motion
         printf("The first car will catch up with the second in %.2f minutes.", R_time);
 
     }
