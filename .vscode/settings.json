@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "HypotenuseTriangle.C": "cpp"
+        "HypotenuseTriangle.C": "cpp",
+        "cmath": "cpp"
     }
 }
