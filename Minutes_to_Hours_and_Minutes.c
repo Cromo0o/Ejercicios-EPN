@@ -4,16 +4,27 @@
 
 int main(void){
 
-    float minutosTotal, horas, minutosRestantes;
+    float minutosTotal, horas, minutosRestantes, resto, segundos;
 
     printf("Digite la cantidad de minutos: ");
     scanf("%f",&minutosTotal);
 
-    horas = trunc(minutosTotal / 60);
-    minutosRestantes = minutosTotal - (horas * 60);
+    if (minutosTotal <= 0){
 
-    printf("En %.0f minutos hay %.0f horas y %.0f minutos.\n", minutosTotal, horas, minutosRestantes);
+        printf("El valor ingresado no es valido");
 
+    }
+    else{
+
+        horas = trunc(minutosTotal / 60);
+        minutosRestantes = minutosTotal - (horas * 60);
+        
+        resto = minutosTotal - trunc(minutosTotal);     //Eliminamos la parte decimal si es que se ingresa una
+        segundos = resto * 60;  
+
+        printf("En %.0f minutos hay %.0f horas, %.0f minutos y %.0f segundos.\n", minutosTotal, horas, minutosRestantes, segundos);
+
+    }
+    
     return 0;
-
 }
