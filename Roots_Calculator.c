@@ -1,28 +1,46 @@
 #include <stdio.h>
 #include <math.h>
 
+float C_root(float n){
+
+    return exp( (1.0/3.0) * log(fabs(n)) );
+
+}
+
+
 int main(void){
 
-    float n, C_Root; // n = number, C_Root = cubic root
+    float n, C_Root_Negative;     // n = numero // C_Root_Negative = Raiz cubica negativa
 
-    printf("Enter the number to be operated on: ");
+    printf("Ingrese el numero a operar: ");
     scanf("%f",&n);
 
-    C_Root = pow(n, (1.0/3.0));
+   
 
     if (n >= 0){
 
-        printf("The square root of %.0f is %.2f\n", n, sqrt(n));
+        printf("La raiz cuadrada de %.0f es %.2f\n", n, sqrt(n));
 
     }
     else{
 
-        printf("The square roots of negative numbers are not defined in the set of real numbers\n");
+        printf("La raiz cuadrada de numeros negativos no esta definida en el conjunto de los numeros reales.\n");
 
     }
-    
 
-    printf("The cube root of %.0f is %.2f\n", n, C_Root);
+    
+    if ( n >= 0){
+
+        printf("La raiz cubica de %.0f es %.2f.\n", n, C_root(n));
+
+    }
+    else{
+
+        C_Root_Negative = C_root(n) * (-1);
+        printf("La raiz cubica de %.0f es %.2f.\n", n, C_Root_Negative);
+
+
+    }
     
     return 0;
 
