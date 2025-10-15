@@ -5,32 +5,31 @@ int main(void){
 
     float s1, s2, d, R_time;  //speed1, speed2, distance, reach time
 
-    printf("* Calculate the time it takes for two cars to reach each other *\n");
-
-    printf("Enter the distance between the two vehicles in kilometers: ");
+    printf("Digite la distancia que hay entre ambos vehiculos en km: ");
     scanf("%f",&d);
     
-    printf("Enter the speed of the first car in km/h.: ");
+    printf("Digite la velocidad en km/h del vehiculo que salio primero: ");
     scanf("%f",&s1);
     
-    printf("Enter the speed of the second car in km/h.: ");
+    printf("Digite la velocidad en km/h del vehiculo que salio despues: ");
     scanf("%f",&s2);
 
+    
+    
     if( s1 > s2 ){
 
-        R_time = ( d / ( s1 - s2 )) * 60; //Formula for the time of reach in uniform rectilinear motion
-        printf("The first car will catch up with the second in %.2f minutes.", R_time);
+        printf("El vehiculo que salio segundo no alcanzara al que salio primero");
 
     }
     else if( s1 < s2 ){
 
-        R_time = ( d / ( s2 - s1 )) * 60;
-        printf("The second car will catch up with the first in %.2f minutes.", R_time);
+        R_time = ( d / ( s2 - s1 )) * 60;       //Formula de tiempo de alcance en un MRU, además de transformar de horas a minutos
+        printf("El segundo vehiculo en salir alcazara al primero en %.2f minutos", R_time);
 
     }
     else{
 
-        printf("Both have the same speed, no one will catch up with anyone else.");
+        printf("Ambos vehiculos tienen la misma velocidad.");
 
     }
 
