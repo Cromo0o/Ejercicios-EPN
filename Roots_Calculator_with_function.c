@@ -7,7 +7,6 @@ float C_root(float n){
 
 }
 
-
 int main(void){
 
     float n, C_Root_Negative;     // n = numero // C_Root_Negative = Raiz cubica negativa
