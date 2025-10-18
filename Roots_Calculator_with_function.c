@@ -1,3 +1,5 @@
+//Program to calculate the square root and cube root of a number
+
 #include <stdio.h>
 #include <math.h>
 
@@ -9,36 +11,59 @@ float C_root(float n){
 
 int main(void){
 
-    float n, C_Root_Negative;     // n = numero // C_Root_Negative = Raiz cubica negativa
+    float n, C_Root_Negative;     // n = numero   C_Root_Negative = Raiz cubica negativa   
+    int option;                   // option = opcion deseada
 
-    printf("Ingrese el numero a operar: ");
-    scanf("%f",&n);
-
+    printf("* PROGRAMA PARA CALCULAR LA RAIZ CUADRADA Y CUBICA DE UN NUMERO\n");
+    printf("1. Raiz Cuadrada :)\n");
+    printf("2. Raiz Cubica :D\n");
+    printf(">>");
+    scanf("%d",&option);
    
+    switch (option) {
+        
+        case 1:
 
-    if (n >= 0){
+            printf("Digite el numero a calcular: ");
+            scanf("%f",&n);
 
-        printf("La raiz cuadrada de %.0f es %.2f\n", n, sqrt(n));
+            if ( n < 0 ){      // Usin guard clauses
 
-    }
-    else{
+                printf("La raiz cuadrada de numeros negativos no esta definida en el conjunto de los numeros reales.\n");
+                
+            }
+            else{
 
-        printf("La raiz cuadrada de numeros negativos no esta definida en el conjunto de los numeros reales.\n");
+                printf("La raiz cuadrada de %.0f es %.2f\n", n, sqrt(n));
 
-    }
+            }
 
+            break;
+
+        case 2:
+            
+            printf("Digite el numero a calcular: ");
+            scanf("%f",&n);
+            
+            if ( n >= 0){
+            
+                printf("La raiz cubica de %.0f es %.2f.\n", n, C_root(n));
+
+            }
+            else{
+
+                C_Root_Negative = C_root(n) * (-1);
+                printf("La raiz cubica de %.0f es %.2f.\n", n, C_Root_Negative);
+
+            }
+
+            break;
     
-    if ( n >= 0){
+        default:
+        
+            printf("No vale");
 
-        printf("La raiz cubica de %.0f es %.2f.\n", n, C_root(n));
-
-    }
-    else{
-
-        C_Root_Negative = C_root(n) * (-1);
-        printf("La raiz cubica de %.0f es %.2f.\n", n, C_Root_Negative);
-
-
+            break;
     }
     
     return 0;
