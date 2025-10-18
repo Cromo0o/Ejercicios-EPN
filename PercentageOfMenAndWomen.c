@@ -1,24 +1,43 @@
-#include <stdio.h>
 //Determine the percentage of men and women in a given group
+#include <stdio.h>
+
+float getPercentWoman(float w, float t){
+
+    return ( ( w / t ) * 100 );
+
+}
+
+float getPercentMen(float m, float t){
+
+    return ( ( m / t ) * 100 );
+
+}
+
 int main(void){
 
-    float hmbrs, mjrs, total, percentH, percentM;
+    float w, m, t; // w = number of woman       m = number of men       t = total number of men and woman
 
-    printf("* Programa para saber el porcentaje de hombres y mujeres en un grupo *\n");
+    printf("* Program to determine the percentage of men and women in a group *\n");
 
-    printf("Digite la cantidad de mujeres: ");
-    scanf("%f",&mjrs);
+    printf("Enter the amount of women: \n");
+    scanf("%f",&w);
 
-    printf("Digite la cantidad de hombres: ");
-    scanf("%f",&hmbrs);
+    printf("Enter the amount of men: \n");
+    scanf("%f",&m);
 
-    total = hmbrs + mjrs;
-    percentH = ( ( hmbrs / total ) * 100 );
-    percentM = ( ( mjrs / total ) * 100 );
+    t = m + w;
+    
+    if( t <= 0){
 
+        printf("The sum of the group of men and women must be a positive number greater than zero.\n");
+    
+    }
+    else{
 
-    printf("En un grupo de %.0f personas, hay %.2f%% de hombres\n", total, percentH);
-    printf("En un grupo de %.0f personas, hay %.2f%% de mujeres\n", total, percentM);
+        printf("In a group of %.0f people, there are %.2f%% of men\n", t, getPercentMen(m, t));
+        printf("In a group of %.0f people, there are %.2f%% of woman\n", t, getPercentWoman(w, t));
+
+    }
 
     return 0;
 
