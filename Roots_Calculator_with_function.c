@@ -27,7 +27,7 @@ int main(void){
             printf("Digite el numero a calcular: ");
             scanf("%f",&n);
 
-            if ( n < 0 ){      // Usin guard clauses
+            if ( n < 0 ){      // Using guard clauses
 
                 printf("La raiz cuadrada de numeros negativos no esta definida en el conjunto de los numeros reales.\n");
                 
