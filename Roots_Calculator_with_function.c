@@ -14,14 +14,14 @@ int main(void){
     float n, C_Root_Negative;     // n = numero   C_Root_Negative = Raiz cubica negativa   
     int option, repeat;                   // option = opcion deseada    repeat = guardar numero que repita proceso o no
 
-    printf("* PROGRAMA PARA CALCULAR LA RAIZ CUADRADA Y CUBICA DE UN NUMERO\n");
-    printf("1. Raiz Cuadrada :)\n");
-    printf("2. Raiz Cubica :D\n");
-    printf(">>");
-    scanf("%d",&option);
-   
     do {
         
+        printf("* PROGRAMA PARA CALCULAR LA RAIZ CUADRADA Y CUBICA DE UN NUMERO\n");
+        printf("1. Raiz Cuadrada :)\n");
+        printf("2. Raiz Cubica :D\n");
+        printf(">>");
+        scanf("%d",&option);
+
         switch (option){
             
             case 1:
