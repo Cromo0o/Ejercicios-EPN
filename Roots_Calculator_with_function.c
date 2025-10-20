@@ -9,10 +9,18 @@ float C_root(float n){
 
 }
 
+float sacarParteDecimal(float option2, int option){
+    
+    option = trunc(option2);     //Obtemenos solo el valor entero
+
+    return option;
+}
+
+
 int main(void){
 
-    float n, C_Root_Negative;     // n = numero   C_Root_Negative = Raiz cubica negativa   
-    int option, repeat;                   // option = opcion deseada    repeat = guardar numero que repita proceso o no
+    float n, C_Root_Negative, option2, PD_Option2;     // n = numero   C_Root_Negative = Raiz cubica negativa option = opcion deseada  
+    int repeat, option;                   // repeat = guardar numero que repita proceso o no
 
     do {
         
@@ -20,8 +28,8 @@ int main(void){
         printf("1. Raiz Cuadrada :)\n");
         printf("2. Raiz Cubica :D\n");
         printf(">>");
-        scanf("%d",&option);
-
+        scanf("%d",&option2);
+        
         switch (option){
             
             case 1:
