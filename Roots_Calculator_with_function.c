@@ -25,7 +25,6 @@ int main(void){
 
         option = (int)option2;
 
-
         if ( option != 1 && option != 2){
 
             printf("El numero ingresado no es una opcion valida para el menu.\n");
