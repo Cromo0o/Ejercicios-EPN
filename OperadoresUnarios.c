@@ -17,10 +17,10 @@ int main(void) {
     printf("a is %d, res is %d\n",a, res);
     
     res = +a;
-    printf("+a isb%d\n", res);
+    printf("+a is %d\n", res);
 
     res = -a;
-    printf("-a isb%d\n", res);
+    printf("-a is %d\n", res);
     
     return 0;
 }
