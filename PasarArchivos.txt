@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "GCC Compilar Archivo Activo",
+            "command": "/usr/bin/gcc", // Ruta a tu compilador GCC
+            "args": [
+                "-g",
+                "${file}", // El archivo .c abierto actualmente
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}" // Crea el ejecutable sin la extensión
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Tarea de compilación generada por VS Code."
+        }
+    ]
+}
