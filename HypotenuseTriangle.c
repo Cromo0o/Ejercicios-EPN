@@ -7,7 +7,6 @@ int main(void){
     float legA, legB, hypC;
 
     printf("* Calculate the hypotenuse of a right triangle *\n");
-
     printf("Enter the first leg of your triangle in cm: ");
     scanf("%f",&legA);
 

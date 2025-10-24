@@ -2,6 +2,7 @@
     "files.associations": {
         "HypotenuseTriangle.C": "cpp",
         "cmath": "cpp",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "math.h": "c"
     }
 }
