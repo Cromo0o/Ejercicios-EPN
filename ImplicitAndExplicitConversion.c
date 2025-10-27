@@ -3,7 +3,7 @@
 
 int main(void){
     
-    //  (Transformacion implícita)
+    //  (Transformacion implícita o automática)
     char A = 'A', B = 'B';  //char -> 1 byte
     int numA, numB,sumaLetras;  //int -> 4 bytes
     
@@ -16,12 +16,12 @@ int main(void){
 
 /***************************************************************************************/
 
-    //  (Transformacion explícita)
+    //  (Transformacion explícita o manual)
     char letra1, letra2;
     int num1 = 65, num2 = 66;
     
-    letra1 = num1;
-    letra2 = num2;
+    letra1 = (char)num1;
+    letra2 = (char)num2;
 
     printf(">>  La letra que le pertenece el numero 65 en ASCII es: %c\n", letra1);
     printf(">>  La letra que le pertenece el numero 66 en ASCII es: %c\n\n", letra2);
