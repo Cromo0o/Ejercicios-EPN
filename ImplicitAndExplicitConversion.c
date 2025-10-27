@@ -3,7 +3,7 @@
 
 int main(void){
     
-    //Transformacion implícita
+    //  (Transformacion implícita)
     char A = 'A', B = 'B';  //char -> 1 byte
     int numA, numB,sumaLetras;  //int -> 4 bytes
     
@@ -12,10 +12,24 @@ int main(void){
 
     sumaLetras = numA + numB;     // La suma de sus valores debe dar 131
 
-    printf(" A + B = %d", sumaLetras);
+    printf(">>  A + B = %d\n", sumaLetras);
+
+/***************************************************************************************/
+
+    //  (Transformacion explícita)
+    char letra1, letra2;
+    int num1 = 65, num2 = 66;
+    
+    letra1 = num1;
+    letra2 = num2;
+
+    printf(">>  La letra que le pertenece el numero 65 en ASCII es: %c\n", letra1);
+    printf(">>  La letra que le pertenece el numero 66 en ASCII es: %c\n\n", letra2);
 
     return 0;
 }
+
+
 
 
 
