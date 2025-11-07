@@ -7,7 +7,7 @@ int main(void)
     int mOroEC, mPlataEC, mBronceEC;    //Cantidad de medallas de Ecuador
     int mOroPE, mPlataPE, mBroncePE;    //Cantidad de medallas de Peru
     
-    printf("*PARTICIPA ECUADOR Y COLOMBIA*\n");
+    printf("*PARTICIPA ECUADOR Y PERU*\n");
     printf("*Programa para saber que pais gano en base a sus medallas*\n");
     
     //Pedimos la cantidad de medallas de Oro, plata y bronce
