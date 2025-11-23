@@ -3,6 +3,7 @@
         "HypotenuseTriangle.C": "c",
         "cmath": "cpp",
         "stdio.h": "c",
-        "math.h": "c"
+        "math.h": "c",
+        "string.h": "c"
     }
 }
