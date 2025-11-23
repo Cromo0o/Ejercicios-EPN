@@ -95,9 +95,12 @@ void mostrarCarrito(struct factura carrito[], int j){
 
 int main(void){
 
+
+    
         int estadoCaja = 0;         // 0 = Cerrada     1 = Abierta
         int i = 0, j = 0, opcionSwitch, opcionIf;   //j será el numero total de productos
         float totalProductosIVA, totalProductosNoIVA, totalVentas, subtotal;
+        float acumuladoSinIVA = 0, acumuladoIVA = 0, acumuladoConIVA = 0;
         const int MAX_PRODUCTOS = 10;  
         
         struct productos lista[20];
@@ -505,6 +508,10 @@ int main(void){
 
                 totalVentas = subtotal + totalProductosIVA;
 
+                acumuladoSinIVA += subtotal;
+                acumuladoIVA += totalProductosIVA;
+                acumuladoConIVA += totalVentas;     
+
                 printf("Generando factura...\n\n");
                 sleep(2);
                 
@@ -544,7 +551,13 @@ int main(void){
                     }
                 }
                 
-            
+                printf("\n--- REPORTE TOTAL DE VENTAS DEL TURNO ---\n");
+                printf("Total ventas sin IVA: $%.2f\n", acumuladoSinIVA);
+                printf("Total ventas con IVA: $%.2f\n", acumuladoConIVA);
+                printf("Total IVA recaudado: $%.2f\n", acumuladoIVA);
+                printf("Total recaudado en el turno: $%.2f\n", acumuladoConIVA);
+
+
                 printf("\n\nGracias por usar nuestro punto de venta :)\n\n");
                 estadoCaja = 0;
                 // Al cerrar la caja, volver al bucle principal para preguntar si se desea abrirla de nuevo
