@@ -2,9 +2,9 @@
 
 int main(void)
 {
-    int n;
-    
     //Ingreso y validación de la entrada
+
+    int n;
     
     do{
         printf("\nIngrese el tamanio del arreglo: ");
