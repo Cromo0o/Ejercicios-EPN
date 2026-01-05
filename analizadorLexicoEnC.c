@@ -44,22 +44,45 @@ int is_integer(const char *str) {
 
 int is_float(const char *str) {
     int i = 0, dot = 0;
-    if (str[0] == '-' || str[0] == '+') i++;
     int digits = 0;
+    
+    //Verificamos si inicia con un negativo o un positivo
+    //De ser el caso, se mueve a la segunda posición str[1].
+    if (str[0] == '-' || str[0] == '+') i++;
+
+    /*.- El bucle for analizará todos los elementos
+         desde el i = 0 hasta que se encuentre con el
+         caracter nulo '\0'.
+      .-Como 'i' ya se inicializó se puede omitir su inicialización en el for.
+    */
+
     for (; str[i]; i++) {
+
+        //Si encuentra un punto dot = 1 (Existe un punto)
         if (str[i] == '.') {
+
+            //Si encuentra otro punto, se cierra la funcion flotante
             if (dot) return 0;
             dot = 1;
+
+        //Verifica si lo ingresado es un numero
         } else if (isdigit(str[i])) {
             digits = 1;
         }else {
+            //En caso de no cumplirse nada, directamente no es flotante
             return 0;
         }
     }
+
+    /*
+    Retorna 1 (verdadero) solo si se encontró un punto y
+    solo si el token ingresado es un numero, sino retorna 0 (falso).
+    */
+
     return dot && digits;
 }
 
-int is_symbol(const char * str) {
+int is_symbol(const char *str) {
     const char *symbols[] = {"+", "-", "*", "/", "=", "==", "!",
     "!=", "<", "<=", ">", ">=", ";", ",", "(", ")", "{", "}"};
     int num_symbols = sizeof(symbols) / sizeof(symbols[0]);
@@ -70,7 +93,7 @@ int is_symbol(const char * str) {
     return 0;
 }
 
-int is_hexadecimal(const char * str) {
+int is_hexadecimal(const char *str) {
     
     if ((str[0] == 0) && (str[1] == 'x'))
         return 0;
@@ -91,6 +114,7 @@ int main(){
         printf("Error al leer la entrada.\n");
         return 1;
     }
+
     
     //Eliminar salto de linea final si existe
     size_t len = strlen(input);
