@@ -9,7 +9,7 @@ tiene en total.
 
 int countVowels(char string[100], int stringLen){
 
-    const char vowels[] = {'a', 'e', 'i', 'o', 'u'};
+    const char vowels[] = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
 
     int vowelsCounter = 0;
 
@@ -18,7 +18,7 @@ int countVowels(char string[100], int stringLen){
     for (int i = 0; i < stringLen; i++){
         
         //La vocal elegida la compara con los caracteres de la cadena
-        for (int j = 0; j < 5; j++){
+        for (int j = 0; j < 10; j++){
             if(string[i] == vowels[j]){
                 vowelsCounter++;
             }
