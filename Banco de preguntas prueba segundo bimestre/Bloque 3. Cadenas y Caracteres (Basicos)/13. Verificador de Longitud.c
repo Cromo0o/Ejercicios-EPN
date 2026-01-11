@@ -34,9 +34,11 @@ int main(void){
     printf("Frase ingresada: %s", str);
 
     if (checkMinimum(str) == 0){
+        printf("%d\n", checkMinimum(str));
         printf("La frase ingresada NO cumple con el minimo de 8 caracteres");
     }
     else{
+        printf("%d\n", checkMinimum(str));
         printf("La frase ingresada cumple con el minimo de 8 caracteres");
     }
 

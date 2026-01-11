@@ -47,7 +47,12 @@ int main(void){
     
     int chainLen = i;
 
-    printf("El cero se encuentra en la posicion %d", searchZero(array, chainLen));
+    if (searchZero(array, chainLen) == -1){
+        printf("No se han encontrado ceros en el arreglo.");
+    }
+    else{
+        printf("El cero se encuentra en la posicion %d", searchZero(array, chainLen));
+    }
 
     return 0;
 }

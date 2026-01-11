@@ -6,25 +6,24 @@ iniciales (J.P.).
 */
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
-void takeInitials(char string[100]){
+void printInitials(char array[]){
 
-    char *name = strtok(string, " ");
-    char *lastname = strtok(NULL, " ");
+    char *nombre = strtok(array, " ");
+    char *apellido = strtok(NULL, " ");
 
-    printf("Iniciales (%c.%c.)\n", name[0], lastname[0]);
-
+    printf("Iniciales: (%c.%c.).\n", toupper(nombre[0]), toupper(apellido[0]));
 }
 
-int main(void){
+int main(){
 
-    char string[100];
+    char array[100];
 
-    printf("Digite su nombre y apellido: ");
-    fgets(string, sizeof(string), stdin);
+    printf("Digite su nombre y apellido:\n>>");
+    fgets(array, sizeof(array), stdin);
 
-    takeInitials(string);
-    
+    printInitials(array);
 
     return 0;
 }
