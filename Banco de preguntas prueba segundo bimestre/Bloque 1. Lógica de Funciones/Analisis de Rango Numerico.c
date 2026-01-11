@@ -64,14 +64,16 @@ int main(void){
     //Transformo la cadena de texto a un entero para tener el numero
     n = atoi(numero);
 
-
     if(myFunction(digitos, longitudCadena, n) == 1){
+        printf("%d\n", myFunction(digitos, longitudCadena, n));
         printf("El numero %d es positivo y es multiplo de 3.", n);
     }
     else if(myFunction(digitos, longitudCadena, n) == 2){
+        printf("%d\n", myFunction(digitos, longitudCadena, n));
         printf("El numero %d es positivo y NO es multiplo de 3.", n);
     }
     else if(myFunction(digitos, longitudCadena, n) == 0){
+        printf("%d\n", myFunction(digitos, longitudCadena, n));
         printf("El numero %d es negativo o cero", n);
     }
     else{
