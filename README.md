@@ -25,3 +25,5 @@ Mini-aplicaciones que simulan casos reales o procesos más complejos.
 * **Editor:** Visual Studio Code
 * **Compilador:** GCC
 * **Sistema:** Windows
+---
+*Organizado por: Matthew Llerena Montoya*
