@@ -24,4 +24,4 @@ Mini-aplicaciones que simulan casos reales o procesos más complejos.
 ## 🛠️ Herramientas
 * **Editor:** Visual Studio Code
 * **Compilador:** GCC
-* **Sistema:**
+* **Sistema:** Windows
