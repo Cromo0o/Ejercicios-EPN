@@ -16,6 +16,7 @@ Uso de condicionales (`if/else`) para resolver problemas de decisión.
 Aplicación de fórmulas matemáticas y funciones de biblioteca.
 
 ### 🟠 Nivel 4: Algoritmos y Lógica Intermedia
+Problemas que requieren mayor análisis y manipulación de datos.
 
 ### 🔴 Nivel 5: Proyectos y Sistemas
 Mini-aplicaciones que simulan casos reales o procesos más complejos.
@@ -23,4 +24,6 @@ Mini-aplicaciones que simulan casos reales o procesos más complejos.
 ## 🛠️ Herramientas
 * **Editor:** Visual Studio Code
 * **Compilador:** GCC
-* **Sistema:**
+* **Sistema:** Windows
+---
+*Organizado por: Matthew Llerena Montoya*
