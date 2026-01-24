@@ -12,7 +12,6 @@ void selectionSort(int n, int arr[]){
         printf("%d", arr[i]);
     }    
     
-    // 3 2 5 4 1
     for (int i = 0; i < (n-1); i++){
         //Asumimos que el elemento más pequeño está en la primera posición
         min = i;
