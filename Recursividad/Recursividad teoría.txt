@@ -1,0 +1,10 @@
+La recursividad es una ténica que se utiliza 
+para realizar una llamada a una función
+desde ella misma.
+
+##  Es una función llamándose a ella misma bastantes veces ##
+
+Todo programa recursivo tiene que tener alguna condición que
+ponga fin a la recursividad.
+Es decir que el programa deje de llamarse a si mismo cuando se cumpla
+la condición para evitar un bucle infinito.

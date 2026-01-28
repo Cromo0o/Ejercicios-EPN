@@ -17,7 +17,7 @@ Localizo la mitad y verifico si es el elemento que busco, sino busco la mitad en
 
 int main(){
     int arr[5] = {3, 4, 5, 6, 7};
-    int n = 3;
+    int n = 7;
     int posicion;
 
     int encontrado = 0;     //1 verdadero, 0 falso
